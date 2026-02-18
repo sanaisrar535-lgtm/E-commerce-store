@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ecommerce Store</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+
+<header class="navbar">
+
+    <h2 class="logo">Mrk-Store</h2>
+
+    <nav class="nav-link" id="navMenu">
+        <a href="./index.html">Home</a>
+        <a href="./shop.html">Shop</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
+
+    <!-- Right Icons -->
+    <div class="nav-icons">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <!-- Hamburger -->
+        <i class="fa-solid fa-bars hamburger" onclick="toggleMenu()"></i>
+    </div>
+
+</header>
+
+<section class="hero-slider">
+  <div class="slides">
+
+    <div class="slide active" style="background-image:
+linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1607083206968-13611e3d76db');">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>Mega Sale 50% OFF</h1>
+        <p>Biggest deals on all categories. Limited time offer.</p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1483985988355-763728e1935b');">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>Men & Women Fashion</h1>
+        <p>Latest outfits, premium quality & best prices.</p>
+        <a href="#" class="btn">Explore Fashion</a>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475');">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>Electronics Collection</h1>
+        <p>Mobiles, laptops & gadgets with huge discounts.</p>
+        <a href="#" class="btn">Buy Electronics</a>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1605100804763-247f67b3557e');">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>Luxury Jewelry</h1>
+        <p>Elegant designs for special moments.</p>
+        <a href="#" class="btn">Shop Jewelry</a>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a');">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>Smart Online Shopping</h1>
+        <p>Fast delivery, secure payments & best offers.</p>
+        <a href="#" class="btn">Start Shopping</a>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="nav prev">&#10094;</button>
+  <button class="nav next">&#10095;</button>
+
+  <div class="dots"></div>
+</section>
+
+
+
+
+
+<!-- ===== CATEGORY FILTER ===== -->
+<section class="filters">
+
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('men')">Men</button>
+    <button onclick="filterProducts('women')">Women</button>
+    <button onclick="filterProducts('electronics')">Electronics</button>
+    <button onclick="filterProducts('jewelery')">Jewellry</button>
+
+</section>
+
+
+<!-- ===== PRODUCTS ===== -->
+<section class="Featured-name"> Featured Product</section>
+<section id="productContainer" class="product-grid"></section>
+
+
+
+<!-- ===== BRANDS PRODUCTS ===== -->
+<section class="brands-section">
+            <h2 class="section-title">Brands Featured</h2>
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Samsung_old_logo_before_year_2015.svg/1280px-Samsung_old_logo_before_year_2015.svg.png" alt="Samsung">
+                    </div>
+                    <div class="brand-name">Samsung</div>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <img src="https://cdn-icons-png.flaticon.com/512/0/747.png" alt="Apple">
+                    </div>
+                    <div class="brand-name">Apple</div>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <img src="https://images.seeklogo.com/logo-png/9/1/nike-logo-png_seeklogo-99478.png" alt="Nike">
+                    </div>
+                    <div class="brand-name">Nike</div>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <img src="https://images.seeklogo.com/logo-png/61/2/louis-vuitton-logo-png_seeklogo-614433.png" alt="Louis Vuitton">
+                    </div>
+                    <div class="brand-name">Louis Vuitton</div>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <img src="https://e7.pngegg.com/pngimages/100/302/png-clipart-sapphire-clothing-fashion-brand-textile-clothing-logo-white-text-thumbnail.png" alt="Sapphire">
+                    </div>
+                    <div class="brand-name">Sapphire</div>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Logo_da_Rolex.png" alt="">
+                    </div>
+                    <div class="brand-name">Rolex</div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h4><b>CATEGORIES</b></h4>
+      <p>Track Ortder</p>
+        <p>Returns</p>
+        <p>Shipping</p>
+        <p>FAQs</p>
+    </div>
+
+    <div class="footer-col">
+      <h4><b>HELP</b></h4>
+      
+        <p>Track Ortder</p>
+        <p>Returns</p>
+        <p>Shipping</p>
+        <p>FAQs</p>
+      
+    </div>
+
+    <div class="footer-col">
+      <h4><b>GET IN TOUCH</b></h4>
+      <p>
+        Any questions? Let us know in store at 8th floor,
+        379 Hudson St, Pak, NY 10018 or call us on
+        (+) 3120560333
+      </p>
+
+       <div class="social-icons">
+        <a href="https://www.facebook.com/share/1BxuM5Kt2K/?mibextid=wwXIfr">
+        <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/mrk_khan9102?igsh=ZGt2cjk4d2pybjh1&utm_source=qr">
+        <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/923192056903">
+        <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4><b>NEWSLETTER</b></h4>
+      <input type="email" placeholder="mariumkhan9102@example.com">
+      <button class="subscribe-btn">SUBSCRIBE</button>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>
+      Copyright ©2026 All rights reserved |
+      Made with ❤ by <span>Colorlib</span> & distributed by <span>ThemeWagon</span>
+    </p>
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

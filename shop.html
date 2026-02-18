@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    
+
+
+<!-- ===== NAVBAR ===== -->
+
+<header class="navbar">
+
+    <h2>Mrk-Store</h2>
+
+    <nav class="nav-link">
+      <a href="./index.html">Home</a>
+      <a href="./shop.html">Shop</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+  </nav>
+  <!--------------Right icon-->
+<div class="nav-icons">
+    <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+  </div>
+</header>
+
+
+
+<!-- ===== CATEGORY FILTER ===== -->
+<section class="filters">
+
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('men')">Men</button>
+    <button onclick="filterProducts('women')">Women</button>
+    <button onclick="filterProducts('electronics')">Electronics</button>
+    <button onclick="filterProducts('jewelery')">Jewelry</button>
+
+</section>
+
+
+
+<!-- ===== PRODUCTS ===== -->
+<section id="productContainer" class="product-grid"></section>
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h4><b>CATEGORIES</b></h4>
+      <p>Track Ortder</p>
+        <p>Returns</p>
+        <p>Shipping</p>
+        <p>FAQs</p>
+    </div>
+
+    <div class="footer-col">
+      <h4><b>HELP</b></h4>
+      
+        <p>Track Ortder</p>
+        <p>Returns</p>
+        <p>Shipping</p>
+        <p>FAQs</p>
+      
+    </div>
+
+    <div class="footer-col">
+      <h4><b>GET IN TOUCH</b></h4>
+      <p>
+        Any questions? Let us know in store at 8th floor,
+        379 Hudson St, pakistan, NY 10018 or call us on
+        (2) 31 20 5603
+      </p>
+
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/1BxuM5Kt2K/?mibextid=wwXIfr">
+        <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/mrk_khan9102?igsh=ZGt2cjk4d2pybjh1&utm_source=qr">
+        <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/923192056903">
+        <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4><b>NEWSLETTER</b></h4>
+      <input type="email" placeholder="mariumkhan9102@example.com">
+      <button class="subscribe-btn">SUBSCRIBE</button>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>
+      Copyright ©2026 All rights reserved |
+      Made with ❤ by <span>Colorlib</span> & distributed by <span>ThemeWagon</span>
+    </p>
+  </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
